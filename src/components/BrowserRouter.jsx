@@ -10,10 +10,14 @@ function BrowserRouter({ children }) {
     useEffect(() => {
         function handlePopStateEvent(e) {
             console.log(e)
+            // Set URL to be updated
+            setCurrentURL(new URL(window.location.href))
         }
+
         window.addEventListener("popstate", handlePopStateEvent)
 
-        return () => window.removeEventListener('popstate', handlePopStateEvent)
+        return () => window.removeEventListener("popstate", handlePopStateEvent)
+
     }, [])
 
     return (

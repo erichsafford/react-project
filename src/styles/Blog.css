@@ -1,0 +1,35 @@
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.title-controls {
+    display: block;
+}
+
+.controls {
+    display: flex;
+    gap: .5rem;
+}
+
+.blog-body {
+    margin: 2.5rem;
+}
+
+.blog-body p {
+    line-height: 1.5;
+}
+
+.blog-nav-button {
+    width: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .blog-header {
+        display: block;
+    }
+
+}
